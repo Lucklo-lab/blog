@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-size: 16px;
+    font-family:  "Montserrat"  sans-serif;
+    color: rgba(0, 0, 0 , .87);
+    line-height: 1.6;
+    font-weight: 500;
+   
+}
+
+.topbar {
+    
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    z-index: 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+}
+.topbar nav  {
+    float: left;
+}
+
+.topbar nav a{
+    color: #9f9f9f ;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 53px;
+    transition: color 0.5s;
+    
+}
+.topbar nav a:hover, .topbar nav a.active {
+    color: #000;
+} 
+.topbar .social{
+    float: right;
+}
+.social img{
+    background-color: #000;
+}
+.social a {
+    padding: 0 12px;
+    opacity: .5;
+    transition: opacity 0.5s;
+} 
+.social a:hover {
+    opacity: 1;
+    
+}
+
+
+
+
+.banniere img{
+    width: 100%;
+    height: 300px;
+}
+
+
+.main{
+    margin-right: 0;
+    float: left;
+    height: auto;
+    width: 70%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+    position: relative;
+    z-index: 2;
+}
+.sidebar
+{
+    position: relative;
+    float: right; 
+    background: #f8f8f8;
+    width: 30%;
+    padding: 40px;
+    font-size: 17px;
+    z-index: 1;
+}
+.sidebar-title{
+    font-size: 30px;
+    color: #000;
+    margin: 15px 0;
+
+}
+.sidebar-title:first-child {
+    margin-top: 0;
+}
+.sidebar a{
+    color: #9f9f9f;
+    text-decoration: none;
+}
+.sidebar a:hover{
+    color: #000;
+    transition: color .5s ;
+}
+.sidebar ul{
+    margin-top: -25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidebar li {
+    padding: 6px 0;
+}
+.sidebar span {
+    position: relative;
+    top: 30px;
+    right: -230px;
+    background: grey;
+    color: #f8f8f8;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-weight: bold;
+    transform: translate(-50%, 50%);
+}
+
+.sidebar hr{
+    border:none;
+    background: #c4c4c4;
+    height: 1px;
+    margin: 50px 0;
+}
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+}
+.article{
+    position: relative;
+    margin: 30px 0; 
+    padding-left: 280px;
+    min-height: 200px;
+    
+}
+.article hr{
+    position: absolute;
+    left: 285 px;
+    top: 60px;
+    font-weight: bold;
+    height: 4px;
+    background: #000;
+width: 100px;
+}
+.article p {
+    margin-top: -10px;
+    
+}
+.article a {
+    color: inherit;
+    text-decoration: none;
+}
+.article a:hover {
+    text-decoration: none;
+}
+.article-img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;  
+    margin-right: 25px;
+    transition: .5s;
+}
+.article-img:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+.article-img img {
+    width: 100%; 
+    height: auto;
+}
+.article-date{
+    font-weight: 300;
+    color: rgba(0, 0, 0, .6);
+    margin-bottom: 5px;
+}
+.article-title {
+    font-size: 2.25rem;
+    line-height: 1.1;
+    font-family: "cardo", serif;
+    margin: 0 0 15px 0;
+}
+
+@media screen and (max-width: 1000px){
+    .body {
+        display: block;
+    }
+    .main {
+        width:100%;
+    }
+    .main .container{
+        overflow: hidden;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width: 730px) {
+    .container {
+        padding: 0 20px;
+    }
+    .article {
+        padding-left: 0;
+    }
+    .article-img {
+        position: static;
+        margin-bottom: 1rem;
+        width:100%;
+        display: block
+    }
+
+}
+
+@media  screen and (max-width:850px) {
+    .topbar {
+        position: absolute;
+    }
+    .topbar nav, .social {
+        float: none;
+        text-align: center;
+    }
+    .topbar nav {
+        margin-bottom: 15px;
+    }
+    .topbar nav a {
+        display: inline-block;
+        margin: 0 20px 5px 20px;
+        white-space: nowrap;  
+    }
+}
+
+    footer{
+        background-color:black ;
+        height: 250px;
+        clear: both;
+    }
+    footer h1{
+        color: rgba(238, 238, 238, 0.952);
+    
+    }
+    #titl
+    {
+        padding-top: 50px;
+        margin-left: 120px;
+    }
+    
+    #droite
+    {
+        margin-left: 100px;
+    }
+    #droite li
+    {
+        float: left;
+        display: block;
+        padding: 18px 16px;
+        
+    }
+    
+    #droite li a{
+        text-align: center;
+        text-decoration: none;
+        color: rosybrown;
+    }
+    #gauche
+    {
+        margin-right: 200px;
+    }
+    #gauche li
+    {
+    float: right;
+    display: block;
+    padding: 18px 10px;
+    
+    }
+    #copyright
+    {
+    
+        color:rosybrown;
+        padding-left: 870px;
+        padding-top: 50px;
+    
+    }
+
+/* permet de briser les blancs coe entre a et propos dans A Propos il va le considerer coe 1 mot(white-space: nowrap)
